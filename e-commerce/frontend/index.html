@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Comerce</title>
+    <!-- Bootstrap --->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+     <!-- font-awesome (iconos)-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        
+     <!-- Style propios -->
+    <link rel="stylesheet" href="css/styles.css">
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="css/logo.png" alt="Logo" width="30" height="35" class="d-inline-block align-text-top">
+                <span class="ml-2 e-commerce-name">ElectroEdge</span>
+            </a>    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">
+                            <img src="css/inicio.png" alt="Casa" width="20" height="20" class="d-inline-block align-text-top">
+                            GYM
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clases.html">
+                            <img src="css/ventas.png" alt="Lista" width="20" height="20" class="d-inline-block align-text-top">
+                            Productos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profesores.html">
+                            <img src="css/carrito.png" alt="Bocina" width="20" height="20" class="d-inline-block align-text-top">
+                            Carrito
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="css/login.png" alt="Bocina" width="20" height="20" class="d-inline-block align-text-top">
+                            Login
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="login.html">Iniciar Sesión</a></li>
+                            <li><a class="dropdown-item" href="registro.html">Registrarse</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <main>
+        <div class="container">
+            <section class="productos">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <article class="producto">
+                            <img src="css/producto1.jpg" alt="Producto 1" class="img-fluid">
+                            <h2>Producto 1</h2>
+                            <p>Descripción del producto 1.</p>
+                            <p>Precio: $99.99</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#producto1Modal">Detalles</button>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <article class="producto">
+                            <img src="css/producto2.jpg" alt="Producto 2" class="img-fluid">
+                            <h2>Producto 2</h2>
+                            <p>Descripción del producto 2.</p>
+                            <p>Precio: $79.99</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#producto2Modal">Detalles</button>
+                        </article>
+                    </div>
+                    <!-- Agrega más productos aquí -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal para el carrito -->
+    <div class="modal fade" id="carritoModal" tabindex="-1" role="dialog" aria-labelledby="carritoModalLabel" aria-hidden="true">
+        <!-- Contenido del carrito -->
+    </div>
+
+    <!-- Modal para Producto 1 -->
+    <div class="modal fade" id="producto1Modal" tabindex="-1" role="dialog" aria-labelledby="producto1ModalLabel" aria-hidden="true">
+        <!-- Detalles del Producto 1 -->
+    </div>
+
+    <!-- Modal para Producto 2 -->
+    <div class="modal fade" id="producto2Modal" tabindex="-1" role="dialog" aria-labelledby="producto2ModalLabel" aria-hidden="true">
+        <!-- Detalles del Producto 2 -->
+    </div>
+
+    <!-- Modal para el inicio de sesión -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <!-- Formulario de inicio de sesión -->
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
