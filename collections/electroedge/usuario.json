@@ -1,0 +1,48 @@
+{
+    "_id": {
+      "$oid": "6500792ab503dd0f5810e2a9"
+    },
+    "nombre": "Victor Gimenez",
+    "correo": "victor@example.com",
+    "contrasena": "hashed_password_here",
+    "direccion": {
+      "calle": "Moron 74",
+      "ciudad": "Las Heras",
+      "codigo_postal": "5539"
+    },
+    "telefono": "+1234567890",
+    "avatar": "ruta/a/tu/avatar.png",
+    "pedidos": [
+      {
+        "fecha": {
+          "$date": "2023-09-12T14:43:54.154Z"
+        },
+        "productos": [
+          {
+            "nombre": "Laptop Lenovo",
+            "cantidad": 1,
+            "precio_unitario": 799.99
+          },
+          {
+            "nombre": "Monitor Dell",
+            "cantidad": 2,
+            "precio_unitario": 199.99
+          }
+        ],
+        "total": 1199.97
+      },
+      {
+        "fecha": {
+          "$date": "2023-09-12T14:43:54.154Z"
+        },
+        "productos": [
+          {
+            "nombre": "Teclado Logitech",
+            "cantidad": 1,
+            "precio_unitario": 49.99
+          }
+        ],
+        "total": 49.99
+      }
+    ]
+  }

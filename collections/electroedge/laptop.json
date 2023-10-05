@@ -1,0 +1,23 @@
+{
+    "_id": {
+      "$oid": "65007bb1b503dd0f5810e2ae"
+    },
+    "nombre": "Dell XPS 13",
+    "descripcion": "Laptop ultradelgada con pantalla InfinityEdge y alto rendimiento.",
+    "precio": 1299.99,
+    "fabricante": "Dell",
+    "pantalla": "13.4 pulgadas 4K Ultra HD",
+    "procesador": "Intel Core i7-1165G7",
+    "memoria_ram": "16 GB DDR4",
+    "almacenamiento": "512 GB SSD",
+    "tarjeta_grafica": "Intel Iris Xe Graphics",
+    "sistema_operativo": "Windows 10 Home",
+    "puertos": [
+      "2 x USB-C",
+      "1 x USB-A",
+      "1 x Thunderbolt 4",
+      "1 x lector de tarjetas SD"
+    ],
+    "tipo": "Laptop",
+    "existencia": 25
+  }
