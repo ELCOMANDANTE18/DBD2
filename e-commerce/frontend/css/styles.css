@@ -1,13 +1,6 @@
-/* Reset de estilos y fuentes */
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Estilos generales */
+/* Default styles */
 body {
-    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -16,9 +9,9 @@ body {
     padding: 20px;
 }
 
-/* Encabezado */
+/* Header styles */
 header {
-    background-color: #333;
+    background-color: #4a90e2;
     color: #fff;
     padding: 10px 0;
 }
@@ -31,7 +24,7 @@ header {
 
 .logo a {
     color: #fff;
-    font-size: 24px;
+    font-size: 28px;
     text-decoration: none;
 }
 
@@ -47,35 +40,36 @@ header {
 .nav-links a {
     color: #fff;
     text-decoration: none;
+    font-size: 18px;
 }
 
-/* Banner promocional */
+/* Banner styles */
 .banner {
     background-image: url('banner.jpg');
     background-size: cover;
     text-align: center;
-    padding: 100px 0;
+    padding: 80px 0;
     color: #fff;
 }
 
 .banner h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    margin-bottom: 30px;
 }
 
 .banner p {
-    font-size: 18px;
-    margin-bottom: 40px;
+    font-size: 20px;
+    margin-bottom: 50px;
 }
 
 .banner .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: #ff5733;
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
+    font-size: 20px;
+    border-radius: 8px;
     transition: background-color 0.3s;
 }
 
@@ -83,7 +77,7 @@ header {
     background-color: #ff2813;
 }
 
-/* Sección de productos destacados */
+/* Product section styles */
 .productos-destacados {
     display: flex;
     flex-wrap: wrap;
@@ -93,39 +87,39 @@ header {
 
 .producto {
     background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
+    border: 2px solid #4a90e2;
+    padding: 30px;
     margin: 20px;
     text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .producto img {
-    max-width: 100%;
+    max-width: 80%;
 }
 
 .producto h3 {
     font-size: 24px;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .producto p {
-    font-size: 18px;
+    font-size: 20px;
     color: #ff5733;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .producto .btn {
-    background-color: #ff5733;
+    background-color: #33b4ff;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 24px;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
+    border-radius: 8px;
+    font-size: 20px;
 }
 
-/* Pie de página */
+/* Footer styles */
 footer {
     background-color: #333;
     color: #fff;
@@ -135,7 +129,7 @@ footer {
 
 .footer-logo a {
     color: #fff;
-    font-size: 24px;
+    font-size: 28px;
     text-decoration: none;
 }
 
@@ -151,13 +145,46 @@ footer {
 .footer-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
 }
 
-.e-commerce-name {
-    font-size: 28px; /* Tamaño de fuente más grande */
-    color: #333; /* Color del texto */
-    font-weight: bold; /* Texto en negrita */
-    text-transform: uppercase; /* Convertir el texto a mayúsculas */
-    letter-spacing: 2px; /* Espaciado entre letras */
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .logo a {
+        font-size: 24px;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #4a90e2;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-links ul {
+        display: block;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        font-size: 24px;
+    }
 }
