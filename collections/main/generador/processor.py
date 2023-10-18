@@ -33,7 +33,7 @@ db = client[db_name]
 collection = db[collection_name]
 
 # Generar 10 registros de datos de procesadores y insertar en la colección
-for _ in range(10):
+for _ in range(100):
     processor = generate_processor_data()
 
     # Insertar el documento en la colección

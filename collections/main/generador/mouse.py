@@ -31,7 +31,7 @@ db = client[db_name]
 collection = db[collection_name]
 
 # Generar 10 registros de datos de mouse y almacenarlos en la colección
-for _ in range(10):
+for _ in range(100):
     mouse = generate_mouse_data()
     insert_result = collection.insert_one(mouse)
     if insert_result.acknowledged:

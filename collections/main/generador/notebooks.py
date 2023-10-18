@@ -38,7 +38,7 @@ db = client[db_name]
 collection = db[collection_name]
 
 # Generar 10 registros de datos de notebooks y guardarlos en la base de datos
-for _ in range(10):
+for _ in range(100):
     notebook = generate_random_notebook_data()
     insert_result = collection.insert_one(notebook)
 

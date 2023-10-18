@@ -6,7 +6,7 @@ fake = Faker()
 
 # Generar 10 registros de datos de usuarios
 user_data_list = []
-for _ in range(10):
+for _ in range(100):
     first_name = fake.first_name()
     last_name = fake.last_name()
     email = fake.email()
